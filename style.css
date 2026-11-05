@@ -72,3 +72,17 @@ section[id]{scroll-margin-top:85px}
  .hero-art .mischief-art{width:clamp(126px,34vw,174px)!important;right:-5%!important;top:5%!important}
  .brand-game-icon{width:52px;height:52px}
 }
+
+/* V9 real screenshot gallery */
+.screenshot-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;align-items:start}
+.screenshot-tile{margin:0;min-width:0;border-radius:18px;overflow:hidden;background:#2c194d;border:1px solid #ffffff20;box-shadow:0 12px 30px #0b071c55}
+.screenshot-tile a{display:block;overflow:hidden;background:#130c25}
+.screenshot-tile img{display:block;width:100%;height:auto;aspect-ratio:9/19.5;object-fit:cover;object-position:top;transition:transform .25s ease}
+.screenshot-tile a:hover img{transform:scale(1.025)}
+.screenshot-tile figcaption{display:flex;flex-direction:column;gap:5px;padding:15px 14px 17px}
+.screenshot-tile figcaption strong{font-weight:900;font-size:14px;color:#fff}
+.screenshot-tile figcaption span{font-size:12px;color:#c9b9dc;line-height:1.4}
+.gallery-hint{text-align:center;color:#c9b9dc;font-size:12px;margin-top:25px}
+@media(max-width:900px){.screenshot-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:650px){.screenshot-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.screenshot-tile figcaption{padding:12px}.screenshot-tile figcaption strong{font-size:13px}}
+@media(prefers-reduced-motion:reduce){.screenshot-tile img{transition:none}}
