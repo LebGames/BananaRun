@@ -86,3 +86,6 @@ section[id]{scroll-margin-top:85px}
 @media(max-width:900px){.screenshot-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:650px){.screenshot-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.screenshot-tile figcaption{padding:12px}.screenshot-tile figcaption strong{font-size:13px}}
 @media(prefers-reduced-motion:reduce){.screenshot-tile img{transition:none}}
+
+/* V10 official links */
+.store-link{display:inline-flex;align-items:center;justify-content:center;background:#28134d;color:#fff;padding:15px 23px;border-radius:9px;font-size:13px;font-weight:900;margin-top:15px;text-align:center;transition:transform .2s,background .2s}.store-link:hover{background:#6934a4;transform:translateY(-2px)}.store-link:focus-visible,.support-item:focus-visible{outline:3px solid #ffda45;outline-offset:3px}.support-item{color:inherit;transition:border-color .2s,background .2s}.support-item:hover{background:#ffffff16;border-color:#ffda4570}.support-item p{overflow-wrap:anywhere}
